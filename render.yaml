@@ -6,10 +6,10 @@ services:
     startCommand: python main.py
     envVars:
       - key: CLIENT_ID
-        value: your_client_id_here
+        value: ${CLIENT_ID}  # Reference environment variable
       - key: CLIENT_SECRET
-        value: your_client_secret_here
+        value: ${CLIENT_SECRET}  # Reference environment variable
       - key: TENANT_ID
-        value: your_tenant_id_here
+        value: ${TENANT_ID}  # Reference environment variable
       - key: USER_EMAIL
-        value: nagesh.hugar@taoautomation.com
+        value: ${USER_EMAIL}  # Reference environment variable
