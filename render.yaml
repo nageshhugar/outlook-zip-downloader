@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: outlook-zip-downloader
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: CLIENT_ID
+        value: your_client_id_here
+      - key: CLIENT_SECRET
+        value: your_client_secret_here
+      - key: TENANT_ID
+        value: your_tenant_id_here
+      - key: USER_EMAIL
+        value: nagesh.hugar@taoautomation.com
